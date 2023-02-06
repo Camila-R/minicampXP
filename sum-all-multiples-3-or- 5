@@ -1,0 +1,31 @@
+<html>
+    <script>
+    
+        console.log("Descubra a soma de todos os múltiplos de 3 ou 5/ Find the sum of all multiples of 3 or 5")
+        
+        function verificaMultiplo(numero)
+            {  
+                var multiplos = [];
+                for (var i=0; i < numero; i++)
+                    {   
+                        if ((i % 3) === 0 || (i % 5) === 0) {
+                           multiplos.push(i);
+                        }
+                    }
+                return multiplos
+            }
+        
+        function somaMultiplos(numero)
+            {
+                var multiplos = verificaMultiplo(numero);
+                var total = 0;
+
+                for (var i=0; i < multiplos.length; i++)
+                    {
+                        total = total + multiplos[i];
+                    }
+                return total
+            }
+       
+    </script>
+</html>
